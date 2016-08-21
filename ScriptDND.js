@@ -45,8 +45,8 @@ window[CHANNEL.name].sequencerLoader = function (){
     }
 };window[CHANNEL.name].sequencerLoader()
 
-$('head').append("<link rel='stylesheet' href='//30fa00b40cdfe1967083358f1085dcaa7d253767.googledrive.com/host/0B0rw0hAu1up3UkU3NzBubjRRNnc/base.css' />");
-$('head').append("<link rel='stylesheet' href='//30fa00b40cdfe1967083358f1085dcaa7d253767.googledrive.com/host/0B0rw0hAu1up3UkU3NzBubjRRNnc/theme.css' />");
+$('head').append("<link rel='stylesheet' href='//raw.githubusercontent.com/EGNEntertainment/OrangNitro-CyTube/master/base.css' />");
+$('head').append("<link rel='stylesheet' href='//raw.githubusercontent.com/EGNEntertainment/OrangNitro-CyTube/master/polyzor.css' />");
 $(".navbar-brand").text("Hollexian's Memes");
 
 CountDownTimer('09/14/2016 10:00 PM', 'countdown');
