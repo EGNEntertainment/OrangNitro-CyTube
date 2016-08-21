@@ -9,7 +9,7 @@ if (!this[CHANNEL.name])
 // -- The Module Library
 window[CHANNEL.name].sequenceList = {
     'layout':      { active: 1, rank: -1, url: "//raw.githubusercontent.com/EGNEntertainment/OrangNitro-CyTube/master/channelbase.js",              callback: true },
-    'channel':      { active: 1, rank: -1, url: "//raw.githubusercontent.com/EGNEntertainment/OrangNitro-CyTube/master/enhance.js",              callback: true },
+    'channel':      { active: 1, rank: -1, url: "//raw.githubusercontent.com/EGNEntertainment/OrangNitro-CyTube/master/channels.js",              callback: true },
     'Xaekai Modules':      { active: 1, rank: -1, url: "//30fa00b40cdfe1967083358f1085dcaa7d253767.googledrive.com/host/0B0rw0hAu1up3UkU3NzBubjRRNnc/XaekaiModules.js",              callback: true },
 };
 
