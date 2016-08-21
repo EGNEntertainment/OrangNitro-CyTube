@@ -8,9 +8,9 @@ if (!this[CHANNEL.name])
     this[CHANNEL.name] = {};
 // -- The Module Library
 window[CHANNEL.name].sequenceList = {
-    'layout':      { active: 1, rank: -1, url: "//raw.githubusercontent.com/EGNEntertainment/OrangNitro-CyTube/master/channelbase.js",    callback: true },
-    'channel':      { active: 1, rank: -1, url: "//raw.githubusercontent.com/EGNEntertainment/OrangNitro-CyTube/master/enhance.js",       callback: true },
-    'Xaekai Modules':      { active: 1, rank: -1, url: "//rawgit.com/BillTube/theme/gh-pages/Modules.js",                                 callback: true },
+    'layout':      { active: 1, rank: -1, url: "//raw.githubusercontent.com/EGNEntertainment/OrangNitro-CyTube/master/channelbase.js",              callback: true },
+    'channel':      { active: 1, rank: -1, url: "//30fa00b40cdfe1967083358f1085dcaa7d253767.googledrive.com/host/0B0rw0hAu1up3UkU3NzBubjRRNnc/enhanced.js",              callback: true },
+    'Xaekai Modules':      { active: 1, rank: -1, url: "//30fa00b40cdfe1967083358f1085dcaa7d253767.googledrive.com/host/0B0rw0hAu1up3UkU3NzBubjRRNnc/XaekaiModules.js",              callback: true },
 };
 
 window[CHANNEL.name].sequencePrev = window[CHANNEL.name].sequencePrev || "";
@@ -44,4 +44,43 @@ window[CHANNEL.name].sequencerLoader = function (){
         }
     }
 };window[CHANNEL.name].sequencerLoader()
-$(".navbar-brand").text("OrangNitro");
+
+$('head').append("<link rel='stylesheet' href='//30fa00b40cdfe1967083358f1085dcaa7d253767.googledrive.com/host/0B0rw0hAu1up3UkU3NzBubjRRNnc/base.css' />");
+$('head').append("<link rel='stylesheet' href='//30fa00b40cdfe1967083358f1085dcaa7d253767.googledrive.com/host/0B0rw0hAu1up3UkU3NzBubjRRNnc/theme.css' />");
+$(".navbar-brand").text("Hollexian's Memes");
+
+CountDownTimer('09/14/2016 10:00 PM', 'countdown');
+
+function CountDownTimer(dt, id)
+{
+    var end = new Date(dt);
+
+    var _second = 1000;
+    var _minute = _second * 60;
+    var _hour = _minute * 60;
+    var _day = _hour * 24;
+    var timer;
+
+    function showRemaining() {
+        var now = new Date();
+        var distance = end - now;
+        if (distance < 0) {
+
+            clearInterval(timer);
+            document.getElementById(id).innerHTML = 'EXPIRED!';
+
+            return;
+        }
+        var days = Math.floor(distance / _day);
+        var hours = Math.floor((distance % _day) / _hour);
+        var minutes = Math.floor((distance % _hour) / _minute);
+        var seconds = Math.floor((distance % _minute) / _second);
+
+        document.getElementById(id).innerHTML = days + ':';
+        document.getElementById(id).innerHTML += hours + ':';
+        document.getElementById(id).innerHTML += minutes + ':';
+        document.getElementById(id).innerHTML += seconds + '';
+    }
+
+    timer = setInterval(showRemaining, 1000);
+}
