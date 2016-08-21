@@ -8,14 +8,14 @@ $("#main").after(
 '<p class="fa fa-angle-right"></p>' +
 '</div>' +
 '<div class="scroll-images scrollable-x">' +
-'<a href="https://cytu.be/r/OrangNitro"><img src="http://i.imgur.com/4rwBWph.png" class="kek" /></a>' +
-'<a href="https://cytu.be/r/OrangNitro"><img src="http://i.imgur.com/4rwBWph.png" class="kek" /></a>' +
-'<a href="https://cytu.be/r/OrangNitro"><img src="http://i.imgur.com/4rwBWph.png" class="kek" /></a>' +
-'<a href="https://cytu.be/r/OrangNitro"><img src="http://i.imgur.com/4rwBWph.png" class="kek" /></a>' +
-'<a href="https://cytu.be/r/OrangNitro"><img src="http://i.imgur.com/4rwBWph.png" class="kek" /></a>' +
-'<a href="https://cytu.be/r/OrangNitro"><img src="http://i.imgur.com/4rwBWph.png" class="kek" /></a>' +
-'<a href="https://cytu.be/r/OrangNitro"><img src="http://i.imgur.com/4rwBWph.png" class="kek" /></a>' +
-'<a href="https://cytu.be/r/OrangNitro"><img src="http://i.imgur.com/4rwBWph.png" class="kek" /></a>' +
+'<a href="https://twitter.com/OrangNitro"><img src="http://i.imgur.com/x3zWQg5.png" class="kek" /></a>' +
+'<a href="http://steamcommunity.com/groups/OrangNitroGaming"><img src="http://i.imgur.com/mVyirbj.png" class="kek" /></a>' +
+'<a href="https://twitter.com/OrangNitro"><img src="http://i.imgur.com/PJSAMJ6.png" class="kek" /></a>' +
+'<a href="https://www.youtube.com/channel/UCNdHVD7qwrr92guensUEoCw"><img src="http://i.imgur.com/TINHYmP.png" class="kek" /></a>' +
+'<a href="https://twitter.com/OrangNitro"><img src="http://i.imgur.com/x3zWQg5.png" class="kek" /></a>' +
+'<a href="http://steamcommunity.com/groups/OrangNitroGaming"><img src="http://i.imgur.com/mVyirbj.png" class="kek" /></a>' +
+'<a href="https://twitter.com/OrangNitro"><img src="http://i.imgur.com/PJSAMJ6.png" class="kek" /></a>' +
+'<a href="https://www.youtube.com/channel/UCNdHVD7qwrr92guensUEoCw"><img src="http://i.imgur.com/TINHYmP.png" class="kek" /></a>' +
 
 '</div></div></div>');
 // The HorizontalScroller Class accepts a jQuery object as its only argument
