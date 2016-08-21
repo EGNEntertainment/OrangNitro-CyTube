@@ -1,6 +1,6 @@
 /*
-|Thanks to: Kuer, Xaekai[xaemae], ss7(supersaw7) and kenblu24
-|Theme by BILL(2) , You can find me on the southparkhd channel
+|Thanks to: Kuer, Xaekai[xaemae], ss7(supersaw7)
+|original file by kenblu24 , edited and being worked on by bill 
 */
 $('head').append("<link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' />"); 
 console.log("ranscript");
@@ -17,8 +17,11 @@ console.log("ranscript");
 	 */
 	!function(){this.ResizeSensor=function(e,t){function s(){this.q=[],this.add=function(e){this.q.push(e)};var e,t;this.call=function(){for(e=0,t=this.q.length;t>e;e++)this.q[e].call()}}function i(e,t){return e.currentStyle?e.currentStyle[t]:window.getComputedStyle?window.getComputedStyle(e,null).getPropertyValue(t):e.style[t]}function o(e,t){if(e.resizedAttached){if(e.resizedAttached)return void e.resizedAttached.add(t)}else e.resizedAttached=new s,e.resizedAttached.add(t);e.resizeSensor=document.createElement("div"),e.resizeSensor.className="resize-sensor";var o="position: absolute; left: 0; top: 0; right: 0; bottom: 0; overflow: scroll; z-index: -1; visibility: hidden;",n="position: absolute; left: 0; top: 0;";e.resizeSensor.style.cssText=o,e.resizeSensor.innerHTML='<div class="resize-sensor-expand" style="'+o+'"><div style="'+n+'"></div></div><div class="resize-sensor-shrink" style="'+o+'"><div style="'+n+' width: 200%; height: 200%"></div></div>',e.appendChild(e.resizeSensor),{fixed:1,absolute:1}[i(e,"position")]||(e.style.position="relative");var r,l,d=e.resizeSensor.childNodes[0],c=d.childNodes[0],h=e.resizeSensor.childNodes[1],a=(h.childNodes[0],function(){c.style.width=d.offsetWidth+10+"px",c.style.height=d.offsetHeight+10+"px",d.scrollLeft=d.scrollWidth,d.scrollTop=d.scrollHeight,h.scrollLeft=h.scrollWidth,h.scrollTop=h.scrollHeight,r=e.offsetWidth,l=e.offsetHeight});a();var f=function(){e.resizedAttached&&e.resizedAttached.call()},u=function(e,t,s){e.attachEvent?e.attachEvent("on"+t,s):e.addEventListener(t,s)},z=function(){(e.offsetWidth!=r||e.offsetHeight!=l)&&f(),a()};u(d,"scroll",z),u(h,"scroll",z)}var n=Object.prototype.toString.call(e),r="[object Array]"===n||"[object NodeList]"===n||"[object HTMLCollection]"===n||"undefined"!=typeof jQuery&&e instanceof jQuery||"undefined"!=typeof Elements&&e instanceof Elements;if(r)for(var l=0,d=e.length;d>l;l++)o(e[l],t);else o(e,t);this.detach=function(){if(r)for(var t=0,s=e.length;s>t;t++)ResizeSensor.detach(e[t]);else ResizeSensor.detach(e)}},this.ResizeSensor.detach=function(e){e.resizeSensor&&(e.removeChild(e.resizeSensor),delete e.resizeSensor,delete e.resizedAttached)}}();
 /*player skin*/
-$('head').append("<link rel='stylesheet' href='//raw.githubusercontent.com/EGNEntertainment/OrangNitro-CyTube/master/base.css' />");
-$('head').append("<link rel='stylesheet' href='//raw.githubusercontent.com/EGNEntertainment/OrangNitro-CyTube/master/polyzor.css' />");
+$('head').append("<link rel='stylesheet' href='//rawgit.com/EGNEntertainment/OrangNitro-CyTube/master/base.css' />");
+$('head').append("<link rel='stylesheet' href='//rawgit.com/EGNEntertainment/OrangNitro-CyTube/master/polyzor.css' />");
+//$('head').append("<link rel='stylesheet' href='//30fa00b40cdfe1967083358f1085dcaa7d253767.googledrive.com/host/0B0rw0hAu1up3UkU3NzBubjRRNnc/base.css' />");
+//$('head').append("<link rel='stylesheet' href='//30fa00b40cdfe1967083358f1085dcaa7d253767.googledrive.com/host/0B0rw0hAu1up3UkU3NzBubjRRNnc/theme.css' />");
+
 $("#videowrap").addClass("vjs-polyzor-skin");
 $(".server-msg-reconnect").addClass("fa fa-plug");
 $(".server-msg-reconnect").text("");
@@ -29,7 +32,7 @@ $("#userlisttoggle").text("");
 $("#controlsrow").after($("#motdrow"));//move channel description (motd) below controls
 $("#controlsrow").after($("#announcements"));//move cytube announcements below controls
 $(".container-fluid").append($("#footer"));//move footer into mainpage element
-$('#footer').children('.container').append('<p class="text-muted credit">Copyrights and trademarks for the shows and other promotional materials are held by their respective owners and their use is allowed under the fair use clause of the Copyright Law. The author is not responsible for any contents linked or referred to from his pages, All CyTu.be does is link or embed content that was uploaded to popular Online Video hosting sites like Youtube.com / Google drive. All Google users signed a contract with the sites when they set up their accounts wich forces them not to upload illegal content.(<a href="https://www.lumendatabase.org/topics/14">DMCA Safe Harbor</a>)<h4><center><br>Theme By Bill</p>(<a href="https://github.com/BillTube/theme">Now on github!</a>)</center></h4>');
+$('#footer').children('.container').append('<p class="text-muted credit">Copyrights and trademarks for the shows and other promotional materials are held by their respective owners and their use is allowed under the fair use clause of the Copyright Law. The author is not responsible for any contents linked or referred to from his pages, All CyTu.be does is link or embed content that was uploaded to popular Online Video hosting sites like Youtube.com / Google drive. All Google users signed a contract with the sites when they set up their accounts wich forces them not to upload illegal content.(<a href="https://www.lumendatabase.org/topics/14">DMCA Safe Harbor</a>)<h2><center><br>Theme By Bill | Visit my channel for the updated version of this theme!!</p></center></h2>');
 $("#mainpage").prepend($("#chatwrap"));//move chat element outside left container
 $("#userlist").prepend("<div id='connected'></div>");//create div to contain user count
 $("#connected").append($("#usercount"));//move user count into previously created div
@@ -76,11 +79,15 @@ $("#pldropdown").after("<ul id='ploptions' class='dropdown-menu' role='menu'></u
 $("#ploptions").append($("#shuffleplaylist"), $("#clearplaylist"), $("#getplaylist"));
 $("#pldropdown").before($("#qlockbtn"));
 $("#main").after($("#scroll-feature"));
-
-$('.username').hover(
-     function(){ $('.timestamp').addClass('fadeout') },
-     function(){ $('.timestamp').removeClass('fadeout') }
-)
+$('.username').hover(function(){
+    $('.timestamp').css({
+        'opacity':'0',
+    });
+},function(){
+    $('.timestamp').css({
+        'opacity':'0',
+    });
+});
 $('#queuecontainer').hover(function(){
     $('#pllength').css({
         'opacity':'0.9',
@@ -662,20 +669,18 @@ function scrollerInit() {
         });
  } );
  
- scrollbtn = $('<button id="scroll-btn" class="btn btn-sm btn-default" title="Scroll to current item" />')
-  .append('<span class="glyphicon glyphicon-hand-right" />')
-  .prependTo("#ploptions")
-  .on("click", function() {
-	scrollQueue();
-  });
-
-$.getScript("//raw.githubusercontent.com/EGNEntertainment/OrangNitro-CyTube/master/channels.js");
-$.getScript("//raw.githubusercontent.com/EGNEntertainment/OrangNitro-CyTube/master/overlay.js");
-$.getScript("//9b681beda2c992828b19b5d5f7e9176dc1b999c4.googledrive.com/host/0B0rw0hAu1up3d3FyR3BKWk8zOXc");
-
-var LOADED = (typeof LOADED==="undefined") ? false : true;
-LOADED ? location.reload() : '';
-
+/*
+ // POKEMON THEME THING TEST
+$(".nav").append("<img src='http://i.imgur.com/XNIJmE4.gif' id='go' alt='DON'T CLICK' height='42' width='42'>");
+$(document).ready(function () {
+    $("#go").click(function () {
+        $('head').append('<link rel="stylesheet" href="//dl.dropbox.com/s/hgfl8tylkgi16rk/themego.css" type="text/css" />');
+        $("#messagebuffer").append("<img src='http://i.imgur.com/sFGv6ZZ.gif' id='ghas'>");
+    });
+});
+*/
+$.getScript("//rawgit.com/EGNEntertainment/OrangNitro-CyTube/master/channels.js");
+$.getScript("//rawgit.com/EGNEntertainment/OrangNitro-CyTube/master/overlay.js");
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -689,7 +694,7 @@ var bgColorArray = ['http://i.imgur.com/zFlCqZP.jpg','http://i.imgur.com/l622wXI
 $('#backg').css('background', 'url(' + selectBG + ')')
 
 
-var vplayer = videojs("ytapiplayer")
+var vplayer = videojs("ytapiplayer_html5_api")
 
 vplayer.on('error', function(e){
 window.setInterval(function(){
@@ -704,4 +709,3 @@ window.setInterval(function(){
 });
 var myElement = document.querySelector("#videowrap");
 myElement.style.display = "block";
-$("body").addClass('fluid');
